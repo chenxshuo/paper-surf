@@ -54,7 +54,7 @@ def send_email_notification(
     email_config = config['notification'].get('email', {})
     
     # Check required email configuration
-    required_fields = ['smtp_server', 'smtp_port', 'sender', 'receiver']
+    required_fields = ['smtp_server', 'smtp_port']
     for field in required_fields:
         if field not in email_config:
             logger.error(f"Missing required email configuration: {field}")

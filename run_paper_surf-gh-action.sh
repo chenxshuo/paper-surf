@@ -1,5 +1,5 @@
 source venv/bin/activate
-
+source setup_envs.sh
 # Get current day of week (1-7, where 1 is Monday)
 DAY_OF_WEEK=$(date +%u)
 
