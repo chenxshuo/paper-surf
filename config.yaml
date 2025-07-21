@@ -1,0 +1,33 @@
+arxiv:
+  categories: ["cs.CL", "cs.LG", "cs.AI", "stat.ML", "cs.CV", "cs.CL", "cs.CR", "cs.IR", "cs.MA", "cs.MM"]
+  lookback_days: 2
+  max_results: 10
+
+interest_papers:
+  zotero_collections:
+    deep_research: "0-PhD-LLM/9-agent-robust/deep-research"
+
+
+embedding_model: "allenai/specter2_base"
+top_k: 5
+use_seen_papers: false  # Set to true to enable tracking of seen papers
+
+output_path: "output/digest.html"
+
+digest:
+  title: "PaperSurf Daily Digest"
+  subtitle: "AI & Machine Learning Paper Recommendations"
+  output_dir: "output"
+  open_in_browser: false  # Set to true to automatically open digest in browser after generation
+
+pipeline:
+  skip_fetch: false  # Set to true to skip fetching new papers
+  skip_embed: false  # Set to true to skip embedding papers
+
+notification:
+  method: email
+  auto_send: true  # Set to true to automatically send emails
+  dry_run: false  # Set to true to run without sending notifications
+  email:
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587

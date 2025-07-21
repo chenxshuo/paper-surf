@@ -1,0 +1,3 @@
+"""
+PaperSurf application package
+"""

@@ -1,0 +1,19 @@
+# Core dependencies
+pyyaml>=6.0          # For config file parsing
+requests>=2.31.0     # For API requests
+numpy>=1.24.3        # For numerical operations
+
+# Paper processing
+arxiv>=1.4.8         # For arXiv API access
+bibtexparser>=1.4.0  # For parsing BibTeX files
+
+# ML/embedding libraries
+torch>=2.0.0         # PyTorch for deep learning
+transformers>=4.30.0 # Hugging Face Transformers for embedding models
+scikit-learn>=1.2.2  # For similarity calculations and other ML utilities
+python-dotenv>=1.0.0
+ipdb 
+pyzotero
+# We'll add more dependencies as needed for specific features:
+# - Email formatting and HTML generation for notifications
+# - Web server components if adding a UI later
