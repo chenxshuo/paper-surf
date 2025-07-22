@@ -16,18 +16,53 @@ An AI-powered daily academic paper recommendation system that helps researchers 
 
 The easiest way to use PaperSurf is through GitHub Actions, which runs automatically in the cloud thanks to Github:
 
-1. **Fork and Star this repository** to your GitHub account
+<details>
+<summary>Click to toggle Github Action Screenshot Tutorial</summary>
 
-2. **Configure secrets** in your repository settings (`Settings > Secrets and variables > Actions`):
+![](./assets/Slide1.jpeg)
+![](./assets/Slide2.jpeg)
+![](./assets/Slide3.jpeg)
+![](./assets/Slide4.jpeg)
+![](./assets/Slide5.jpeg)
+
+</details>
+
+
+
+#### 1. **Fork and Star this repository** to your GitHub account
+
+#### 2. **Configure secrets** in your repository settings (`Settings > Secrets and variables > Actions`):
    - `EMAIL_SENDER`: Your Gmail address
    - `EMAIL_RECEIVER`: Email address to receive recommendations
    - `EMAIL_PASSWORD`: Gmail app-specific password
    - `ZOTERO_API_KEY`: Your Zotero API key
    - `ZOTERO_LIBRARY_ID`: Your Zotero library ID
 
-3. **Customize configuration** by editing `config.yaml` in your fork
+<details>
+<summary>Click to how to get EMAIL_PASSWORD</summary>
 
-4. **Enable GitHub Actions** - the workflow will run daily automatically
+![](./assets/Slide13.jpeg)
+![](./assets/Slide14.jpeg)
+![](./assets/Slide15.jpeg)
+
+</details>
+
+<details>
+<summary>Click to how to get ZOTERO_API_KEY and ZOTERO_LIBRARY_ID</summary>
+
+![](./assets/Slide7.jpeg)
+![](./assets/Slide8.jpeg)
+![](./assets/Slide9.jpeg)
+![](./assets/Slide10.jpeg)
+![](./assets/Slide11.jpeg)
+![](./assets/Slide12.jpeg)
+
+</details>
+
+
+
+#### 3. **Customize configuration** by editing `config.yaml` in your fork
+
 
 ### Option 2: Local Installation 💻
 
@@ -56,9 +91,9 @@ For local development or manual runs:
 3. **Configure environment variables:**
    ```bash
    # Copy and edit the setup script
-   cp setup_envs.sh setup_envs_local.sh
-   # Edit setup_envs_local.sh with your credentials
-   source setup_envs_local.sh
+   cp setup_envs_temp.sh setup_envs.sh 
+   vi setup_envs.sh # and add your credentials there
+   source setup_envs.sh
    ```
 
 4. **Configure the system:**
@@ -104,10 +139,35 @@ python run_daily.py --date 2025-07-21 --topk 10
 2. Find your library ID from your Zotero profile
 3. Set these in your environment variables
 
+<details>
+<summary>Click to how to get ZOTERO_API_KEY and ZOTERO_LIBRARY_ID</summary>
+
+![](./assets/Slide7.jpeg)
+![](./assets/Slide8.jpeg)
+![](./assets/Slide9.jpeg)
+![](./assets/Slide10.jpeg)
+![](./assets/Slide11.jpeg)
+![](./assets/Slide12.jpeg)
+
+</details>
+
+
+
 ### Email Setup 📧
 Configure SMTP settings for email notifications:
 - Email sender and receiver addresses
 - App-specific password for Gmail or other providers
+
+
+<details>
+<summary>Click to how to get EMAIL_PASSWORD</summary>
+
+![](./assets/Slide13.jpeg)
+![](./assets/Slide14.jpeg)
+![](./assets/Slide15.jpeg)
+
+</details>
+
 
 ### Configuration File (`config.yaml`) 📄
 
