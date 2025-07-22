@@ -42,6 +42,9 @@ The easiest way to use PaperSurf is through GitHub Actions, which runs automatic
 <summary>Click to how to get EMAIL_PASSWORD</summary>
 
 ![](./assets/Slide13.jpeg)
+
+https://myaccount.google.com/apppasswords
+
 ![](./assets/Slide14.jpeg)
 ![](./assets/Slide15.jpeg)
 
@@ -51,6 +54,9 @@ The easiest way to use PaperSurf is through GitHub Actions, which runs automatic
 <summary>Click to how to get ZOTERO_API_KEY and ZOTERO_LIBRARY_ID</summary>
 
 ![](./assets/Slide7.jpeg)
+
+https://www.zotero.org/settings
+
 ![](./assets/Slide8.jpeg)
 ![](./assets/Slide9.jpeg)
 ![](./assets/Slide10.jpeg)
@@ -77,7 +83,7 @@ For local development or manual runs:
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/chenxshuo/paper-surf
    cd paper-surf
    ```
 
