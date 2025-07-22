@@ -1,4 +1,4 @@
-# PaperSurf 🏄‍♂️📄
+<h2 align="center">PaperSurf 🏄‍♂️📄</h2>
 
 An AI-powered daily academic paper recommendation system that helps researchers stay up-to-date with the latest arXiv publications. PaperSurf fetches daily papers from arXiv, uses topic modeling to calculate similarity with papers from your Zotero library, and generates personalized email recommendations to help you keep pace with the daily paper waves. 🌊
 
